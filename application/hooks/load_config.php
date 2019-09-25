@@ -26,7 +26,7 @@ function load_config()
         $CI->config->set_item('language_code', 'en-US');
     }
 
-    // _load_language_files($CI, '../vendor/codeigniter/framework/system/language', current_language());
+    _load_language_files($CI, '../application/language', current_language());
     _load_language_files($CI, '../application/language', current_language_code());
 
     //Set timezone from config database
